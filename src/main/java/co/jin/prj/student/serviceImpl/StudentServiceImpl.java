@@ -11,7 +11,7 @@ import co.jin.prj.student.vo.StudentVO;
 
 public class StudentServiceImpl implements StudentService {
 	
-	
+	// 가장 중요한게 아래 두줄을 쓰는것
 	private SqlSession sqlSession = DataSource.getInstance().openSession(true);
 	private StudentMapper map = sqlSession.getMapper(StudentMapper.class);
 	

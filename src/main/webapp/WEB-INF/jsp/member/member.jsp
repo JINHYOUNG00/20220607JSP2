@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +9,7 @@
 </head>
 <body>
     <h1>회원목록</h1>
-    <h3>${name } : ${id } : ${password }</h3>
-
+    <c:forEach items="${students }" var="s"></c:forEach>
+		${s.studentId } : ${s.name } : ${s.address }<br/>
 </body>
 </html>

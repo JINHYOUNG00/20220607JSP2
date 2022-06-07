@@ -30,7 +30,7 @@ public class FrontController extends HttpServlet {
 		
 		// Command 인터페이스에 구현객체가 추가될때마다 하나하나 맵에 넣어줘야함.
 		map.put("/test.do", new TestCommand());   // /test.do 를 넣어주면 TestCommand가 리턴됨
-		map.put("/memberList.do", new MemberListCommand());
+		map.put("/memberList.do", new MemberListCommand()); // 학생목록
 
 	}
 
