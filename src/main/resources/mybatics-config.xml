@@ -15,6 +15,6 @@
     </environment>
   </environments>
   <mappers>
-    <mapper resource=""/>
+    <mapper resource="co/jin/prj/student/service/student-map.xml"/>
   </mappers>
 </configuration>
